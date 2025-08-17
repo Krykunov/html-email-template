@@ -6,13 +6,22 @@
   "scripts": {
     "maildev": "maildev",
     "send": "node sendEmail.js",
-    "watch": "nodemon --exec \"node sendEmail.js\" --ext html"
+    "inline": "node inline.js",
+    "inline-send": "node inline.js --send",
+    "watch": "nodemon --watch email-source.html --exec \"node inline.js --send\"",
+    "watch-preview": "nodemon --watch email-source.html --exec \"node inline.js\" & live-server --port=5500 --open=./email.html --watch=email.html",
+    "live": "live-server --port=5500 --open=./email.html",
+    "dev": "npm run watch-preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.1",
     "nodemailer": "^7.0.5"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "juice": "^11.0.1"
+  }
 }

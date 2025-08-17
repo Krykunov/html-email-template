@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Email Template</title>
     <style>
-@media screen and (max-width: 500px) {
-  .container {
-    width: 100% !important;
-  }
+      /* Prevent iOS blue link styling */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
 
-  .mobile-center {
-    text-align: center !important;
-  }
+      /* Responsive styles for small screens */
+      @media screen and (max-width: 500px) {
+        .container {
+          width: 100% !important;
+        }
 
-  .mobile-padding {
-    padding: 20px !important;
-  }
-}
-</style>
+        .mobile-center {
+          text-align: center !important;
+        }
+
+        .mobile-padding {
+          padding: 20px !important;
+        }
+      }
+
+      table {
+        background-color: #e02cb9;
+      }
+    </style>
   </head>
 
   <body>
     <center style="width: 100%">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e02cb9; max-width: 600px;" class="container" bgcolor="#e02cb9">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 600px" class="container">
         <tr>
           <td align="center" style="padding: 20px 0; background-color: #222222">
-            <img src="https://placehold.co/150x50" width="150" height="50" alt="Logo" style="display: block; border: 0; outline: none; text-decoration: none">
+            <img src="https://placehold.co/150x50" width="150" height="50" alt="Logo" style="display: block; border: 0; outline: none; text-decoration: none" />
           </td>
         </tr>
         <tr>
@@ -35,10 +46,13 @@
             <h1 style="margin: 0 0 20px; font-size: 24px; font-weight: bold; color: #111111">2223333Welcome to Our Service</h1>
             <p style="margin: 0 0 20px">44444Hello there, We’re excited to have you on board! This email template is bulletproof and works across Gmail, Apple Mail, and Outlook.</p>
             <p style="margin: 0 0 30px">Click the button below to get started:</p>
-            <table border="0" cellspacing="0" cellpadding="0" align="center" style="background-color: #e02cb9;" bgcolor="#e02cb9">
+            <table border="0" cellspacing="0" cellpadding="0" align="center">
               <tr>
                 <td bgcolor="#007BFF" style="border-radius: 5px">
-                  <a href="https://example.com" style="display: inline-block; padding: 12px 25px; font-family: Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 5px">
+                  <a
+                    href="https://example.com"
+                    style="display: inline-block; padding: 12px 25px; font-family: Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 5px"
+                  >
                     Get Started
                   </a>
                 </td>
