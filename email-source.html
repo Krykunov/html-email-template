@@ -4,66 +4,330 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Email Template</title>
+    <title>Preply - Learning, upgraded</title>
     <style>
+      /* Reset styles */
+      body,
+      table,
+      td,
+      p,
+      a,
+      li,
+      blockquote {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding-top: 40px;
+      }
+
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      img {
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        display: block;
+      }
+
       /* Prevent iOS blue link styling */
       a[x-apple-data-detectors] {
         color: inherit !important;
         text-decoration: none !important;
       }
-
-      /* Responsive styles for small screens */
-      @media screen and (max-width: 500px) {
-        .container {
-          width: 100% !important;
-        }
-
-        .mobile-center {
-          text-align: center !important;
-        }
-
-        .mobile-padding {
-          padding: 20px !important;
-        }
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-family: Helvetica, Arial, sans-serif;
       }
 
-      table {
-        background-color: #e02cb9;
+      h1 {
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.02px;
+        margin-bottom: 12px;
+      }
+
+      h2 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      h3 {
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      .text-secondary {
+        color: #6a697c;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .logo-container {
+        text-align: center;
+        padding-bottom: 24px;
+      }
+
+      .logo {
+        max-width: 172px;
+      }
+
+      .badge {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 2px 8px;
+        background-color: #ffdf3d;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: bold;
+      }
+
+      .stroke {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: line-through;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .dot-divider {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: line-through;
+      }
+
+      .dot-divider {
+        display: inline-block;
+        vertical-align: middle;
+        width: 3px;
+        height: 3px;
+        background-color: #a8a8b6;
+        border-radius: 50%;
+        margin: 0 7px;
+      }
+
+      /* Main styles */
+      .email-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 520px;
+      }
+
+      .section-header {
+        max-width: 520px;
+        background-color: #fff;
+        border-radius: 12px;
+      }
+
+      .section-container {
+        max-width: 520px;
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 12px;
+        text-align: center;
+      }
+
+      .hero {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+
+      .main-descr {
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        border-radius: 8px;
+        border: 2px solid #121117;
+        height: 52px;
+        line-height: 52px;
+      }
+
+      .btn-link {
+        color: #121117;
+        text-decoration: none;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      .btn-filled {
+        background-color: #ff69b4;
+        color: white;
+      }
+
+      .btn-outlined {
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      /* Tutor Block */
+
+      .tutor-block {
+        text-align: left;
+        padding: 18px;
+        border-radius: 12px;
+        border: 1px solid #dcdce5;
+        margin-bottom: 20px;
+      }
+
+      .avatar-container {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .avatar {
+        border-radius: 4px;
+        border: 1px solid #dcdce5;
+      }
+
+      .tutor-bio {
+        margin-top: 4px;
+        margin-bottom: 12px;
+      }
+
+      .tutor-descr {
+        margin-bottom: 4px;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 470px) {
+        .email-container {
+          width: 100% !important;
+        }
       }
     </style>
   </head>
 
   <body>
-    <center style="width: 100%">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 600px" class="container">
-        <tr>
-          <td align="center" style="padding: 20px 0; background-color: #222222">
-            <img src="https://placehold.co/150x50" width="150" height="50" alt="Logo" style="display: block; border: 0; outline: none; text-decoration: none" />
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #333333">
-            <h1 style="margin: 0 0 20px; font-size: 24px; font-weight: bold; color: #111111">2223333Welcome to Our Service</h1>
-            <p style="margin: 0 0 20px">44444Hello there, We’re excited to have you on board! This email template is bulletproof and works across Gmail, Apple Mail, and Outlook.</p>
-            <p style="margin: 0 0 30px">Click the button below to get started:</p>
-            <table border="0" cellspacing="0" cellpadding="0" align="center">
-              <tr>
-                <td bgcolor="#007BFF" style="border-radius: 5px">
-                  <a
-                    href="https://example.com"
-                    style="display: inline-block; padding: 12px 25px; font-family: Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 5px"
-                  >
-                    Get Started
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td bgcolor="#f4f4f4" style="padding: 20px; font-family: Arial, sans-serif; font-size: 14px; color: #666666">&copy; 2025 Your Company. All rights reserved.123</td>
-        </tr>
-      </table>
-    </center>
+    <table role="presentation" width="100%" bgcolor="#f4f4f8" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td align="center">
+          <table class="email-container" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="logo-container"><img class="logo" src="images/logo.png" alt="Preply Logo" /></td>
+            </tr>
+            <!-- Header Section -->
+            <tr>
+              <td align="center">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="section-header">
+                  <tr>
+                    <td>
+                      <!--[if gte mso 9]>
+                        <v:roundrect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="#"
+                          style="height: 300px; v-text-anchor: middle; width: 520px"
+                          arcsize="6%"
+                          stroke="f"
+                          fill="t"
+                        >
+                          <v:fill src="images/hero.png" type="frame" />
+                        </v:roundrect>
+                      <![endif]-->
+
+                      <!--[if !mso]><!-->
+                      <img src="images/hero.png" width="100%" alt="Preply Hero" class="hero" />
+                      <!--<![endif]-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="section-container">
+                        <tr>
+                          <td>
+                            <h1>Lorem ipsum dolor sit</h1>
+                            <p class="main-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </td>
+                        </tr>
+
+                        <!-- Tutor Block -->
+                        <tr>
+                          <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tutor-block">
+                              <tr>
+                                <td class="avatar-container">
+                                  <img src="images/avatar.png" width="78" height="78" alt="Aitor A." class="avatar" />
+                                </td>
+                                <td>
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                      <td align="left"><h2>Aitor A.</h2></td>
+                                      <td align="right">
+                                        <a href="https://preply.com/en/tutor/89198" target="_blank">
+                                          <img src="images/outside-link.png" alt="icon" width="21" height="21" />
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <p class="text-secondary tutor-bio">Native speaker, experienced, conversational</p>
+                                  <p class="tutor-descr">
+                                    <span class="badge"> 0$/ lesson </span>
+                                    <span class="dot-divider"></span>
+                                    <span class="stroke"> 0€/lesson </span>
+                                  </p>
+                                  <p class="text-secondary">{day}, {month}, {time}, {date}</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
+                              <tr>
+                                <td height="52" bgcolor="#ff69b4" class="btn btn-filled">
+                                  <a href="https://preply.com/" target="_blank" class="btn-link">Lorem ipsum</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                              <tr>
+                                <td height="12" style="line-height: 12px; font-size: 12px">&nbsp;</td>
+                              </tr>
+                            </table>
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
+                              <tr>
+                                <td height="52" class="btn btn-outlined">
+                                  <a href="https://preply.com/" target="_blank" class="btn-link">Lorem ipsum</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Main Content -->
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
