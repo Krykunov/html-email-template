@@ -20,6 +20,11 @@
         -ms-text-size-adjust: 100%;
       }
 
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
       body {
         background-color: #f4f4f8;
         font-family: Helvetica, Arial, sans-serif;
@@ -163,6 +168,9 @@
       .section-white {
         background-color: #fff;
       }
+      .section-gray {
+        background-color: #ebebf1;
+      }
 
       .section-bordered-bg {
         border: 2px solid #000;
@@ -191,6 +199,20 @@
         line-height: 52px;
       }
 
+      .btn .btn-link {
+        line-height: 52px;
+      }
+
+      .btn-big {
+        border-radius: 8px;
+        border: 2px solid #121117;
+        height: 68px;
+      }
+
+      .btn-big .btn-link {
+        line-height: 68px;
+      }
+
       .btn-link {
         color: #121117;
         font-size: 18px;
@@ -199,6 +221,7 @@
         font-weight: 600;
         display: block;
         width: 100%;
+        height: 100%;
         text-align: center;
       }
 
@@ -280,12 +303,46 @@
         font-weight: 400;
       }
 
+      .text-small {
+        font-size: 12px;
+        line-height: 18px;
+        color: #302f3b;
+      }
+
       /* Responsive styles */
       @media only screen and (max-width: 470px) {
+        .stack-column {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+          text-align: center !important;
+        }
+        .stack-column img {
+          margin: 0 auto !important;
+        }
+
+        .stack-column.top-button {
+          padding-bottom: 12px;
+        }
         table[role='presentation'] {
           width: 100% !important;
         }
-        td {
+
+        .stack-column table[role='presentation'] {
+          margin: 0 auto !important;
+        }
+        .btn-inline {
+          display: inline-block !important;
+          text-align: center !important;
+        }
+        .btn-inline td {
+          display: inline-block !important;
+          vertical-align: middle !important;
+          text-align: center !important;
+        }
+        /* td {
           padding: 10px !important;
         }
         h1 {
@@ -295,7 +352,7 @@
         p {
           font-size: 14px !important;
           line-height: 20px !important;
-        }
+        } */
       }
     </style>
   </head>
@@ -395,9 +452,9 @@
 
                         <tr>
                           <td>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
+                            <table valign="middle" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
                               <tr>
-                                <td height="52" bgcolor="#ff69b4" class="btn btn-filled">
+                                <td valign="middle" height="52" bgcolor="#ff69b4" class="btn btn-filled">
                                   <a href="https://preply.com/" target="_blank" class="btn-link figtree">Lorem ipsum</a>
                                 </td>
                               </tr>
@@ -550,16 +607,16 @@
                           <td>
                             <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                               <tr>
-                                <td style="padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
-                                <td><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                                <td valign="top" style="padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
+                                <td valign="top"><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
                               </tr>
                               <tr>
-                                <td style="padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
-                                <td><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                                <td valign="top" style="padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
+                                <td valign="top"><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
                               </tr>
                               <tr>
-                                <td style="font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
-                                <td><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                                <td valign="top" style="font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
+                                <td valign="top"><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
                               </tr>
                             </table>
                           </td>
@@ -691,6 +748,250 @@
                                 </td>
                               </tr>
                             </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+                    <td height="24" style="line-height: 24px; font-size: 24px">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Pig Section -->
+
+            <tr>
+              <td align="center">
+                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
+                  <tr>
+                    <td valign="middle">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+                          <td align="center" valign="middle" class="icon-container stack-column" width="48%" style="padding-right: 20px">
+                            <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/pig.png" width="138" height="138" alt="pig" />
+                          </td>
+
+                          <td class="stack-column" width="52%">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td style="padding-bottom: 8px">
+                                  <h2 class="tahoma font-regular">Maximize your subscription!</h2>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 28px">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
+                              <tr>
+                                <td height="52" class="btn btn-outlined" align="center">
+                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="letter-spacing: 0.2px">Lorem ipsum</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+                    <td height="24" style="line-height: 24px; font-size: 24px">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Support Section -->
+
+            <tr>
+              <td>
+                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-gray">
+                  <tr>
+                    <td>
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width: 400px">
+                              <tr>
+                                <td style="padding-bottom: 8px">
+                                  <h2 class="tahoma font-regular">We’re here to help</h2>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td style="padding-bottom: 20px">
+                                  <p style="font-size: 16px; line-height: 22px" class="tahoma">
+                                    Our friendly support team is always happy to answer your questions. Get in touch if you have any doubts or concerns.
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="stack-column top-button" width="50%" valign="top" style="padding-right: 6px">
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                      <td class="btn-big btn-outlined" align="center">
+                                        <a href="https://preply.com/" target="_blank" style="display: inline-block">
+                                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" class="btn-inline">
+                                            <tr>
+                                              <td valign="middle" style="padding-right: 6px">
+                                                <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Icon-help.png" alt="icon-help" width="24" height="24" />
+                                              </td>
+                                              <td valign="middle" class="tahoma font-regular">
+                                                <span style="font-size: 18px">Help center</span>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+
+                                <td class="stack-column top-button" width="50%" valign="top" style="padding-left: 6px">
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                      <td class="btn-big btn-outlined" align="center">
+                                        <a href="https://preply.com/" target="_blank" style="display: inline-block; padding: 12px 20px">
+                                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" class="btn-inline">
+                                            <tr>
+                                              <td valign="middle" style="padding-right: 6px">
+                                                <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Icon-support.png" alt="icon-support" width="24" height="24" />
+                                              </td>
+                                              <td valign="middle" class="tahoma font-regular">
+                                                <span style="font-size: 18px">Get support</span>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding-top: 20px; text-align: left">
+                            <p class="text-small">By confirming, you’ll be subscribed to our suggested notifications. You can customize your setting or unsubscribe anytime.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+                    <td height="24" style="line-height: 24px; font-size: 24px">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+
+            <tr>
+              <td>
+                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 24px">
+                  <tr>
+                    <td align="center" style="padding-bottom: 16px">
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
+                        <tr>
+                          <td style="padding: 0 6px">
+                            <a href="https://preply.com/">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Instagram_icon.png" width="24" height="24" alt="Instagram1" />
+                            </a>
+                          </td>
+                          <td style="padding: 0 6px">
+                            <a href="https://preply.com/">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/LinkedIn_icon.png" width="24" height="24" alt="LinkedIn" />
+                            </a>
+                          </td>
+                          <td style="padding: 0 6px">
+                            <a href="https://preply.com/">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Tiktok_icon.png" width="24" height="24" alt="TikTok" />
+                            </a>
+                          </td>
+                          <td style="padding: 0 6px">
+                            <a href="https://preply.com/">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Youtube_icon.png" width="24" height="24" alt="YouTube" />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p style="text-align: center" class="text-small tahoma">Subscribed email address iker.cia@preply.com</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding-bottom: 16px">
+                      <a href="https://preply.com/" style="text-align: center; padding-bottom: 16px" class="text-small tahoma">Unsubscribe</a>
+                      <span>|</span>
+                      <a href="https://preply.com/" style="text-align: center; padding-bottom: 16px" class="text-small tahoma">Manage notifications</a>
+                      <span>|</span>
+                      <a href="https://preply.com/" style="text-align: center; padding-bottom: 16px" class="text-small tahoma">Contact us</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p style="text-align: center; padding-bottom: 16px; color: #6a697c" class="text-small tahoma">
+                        Copyright © 2025 Preply, Inc, 1309 Beacon Street, Suite 300, Brookline, MA 02446, USA. Please do not forward or share this email as it is intended to be used only by you. More
+                        details
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center">
+                      <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td width="50%" valign="top" style="padding-right: 5px" align="right">
+                            <a href="https://apps.apple.com/us/app/preply-language-learning-app/id1352790442" target="_blank" style="display: inline-block">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/appstore.png" width="162px" height="54px" alt="appstore" />
+                            </a>
+                          </td>
+
+                          <td width="50%" valign="top" style="padding-left: 5px" align="left">
+                            <a href="https://play.google.com/store/apps/details?id=com.preply" target="_blank" style="display: inline-block">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/google.png" width="162px" height="54px" alt="gplay" />
+                            </a>
                           </td>
                         </tr>
                       </table>

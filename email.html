@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Preply - Learning, upgraded</title>
     <style>
+.btn .btn-link {
+  line-height: 52px;
+}
+.btn-big .btn-link {
+  line-height: 68px;
+}
 .btn-link {
   color: #121117;
   font-size: 18px;
@@ -14,25 +20,44 @@
   font-weight: 600;
   display: block;
   width: 100%;
+  height: 100%;
   text-align: center;
 }
 @media only screen and (max-width: 470px) {
+  .stack-column {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .stack-column img {
+    margin: 0 auto !important;
+  }
+
+  .stack-column.top-button {
+    padding-bottom: 12px;
+  }
+
   table[role='presentation'] {
     width: 100% !important;
   }
 
-  td {
-    padding: 10px !important;
+  .stack-column table[role='presentation'] {
+    margin: 0 auto !important;
   }
 
-  h1 {
-    font-size: 20px !important;
-    line-height: 24px !important;
+  .btn-inline {
+    display: inline-block !important;
+    text-align: center !important;
   }
 
-  p {
-    font-size: 14px !important;
-    line-height: 20px !important;
+  .btn-inline td {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    text-align: center !important;
   }
 }
 </style>
@@ -102,7 +127,7 @@
                                     <tr>
                                       <td align="left" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><h2 style="margin: 0; padding: 0; font-weight: bold; font-family: Helvetica, Arial, sans-serif; font-size: 24px; line-height: 28px; letter-spacing: -0.02px;">Aitor A.</h2></td>
                                       <td align="right" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                        <a href="https://preply.com/en/tutor/89198" target="_blank" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                                        <a href="https://preply.com/en/tutor/89198" target="_blank" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit;">
                                           <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/outside-link.png" alt="icon" width="21" height="21" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
                                         </a>
                                       </td>
@@ -133,10 +158,10 @@
 
                         <tr>
                           <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table valign="middle" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                               <tr>
-                                <td height="52" bgcolor="#ff69b4" class="btn btn-filled" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: #ff69b4; color: white;">
-                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; line-height: 24px; text-decoration: none; font-weight: 600; display: block; width: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif;">Lorem ipsum</a>
+                                <td valign="middle" height="52" bgcolor="#ff69b4" class="btn btn-filled" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: #ff69b4; color: white;">
+                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; text-decoration: none; font-weight: 600; display: block; width: 100%; height: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif; line-height: 52px;">Lorem ipsum</a>
                                 </td>
                               </tr>
                             </table>
@@ -150,7 +175,7 @@
                             <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                               <tr>
                                 <td height="52" class="btn btn-outlined" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: transparent;" bgcolor="transparent">
-                                  <a href="https://preply.com/" target="_blank" class="btn-link" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; line-height: 24px; text-decoration: none; font-weight: 600; display: block; width: 100%; text-align: center;">Lorem ipsum</a>
+                                  <a href="https://preply.com/" target="_blank" class="btn-link" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; text-decoration: none; font-weight: 600; display: block; width: 100%; height: 100%; text-align: center; line-height: 52px;">Lorem ipsum</a>
                                 </td>
                               </tr>
                             </table>
@@ -197,7 +222,7 @@
                       <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr>
                           <td height="52" class="btn btn-outlined" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: transparent;" bgcolor="transparent">
-                            <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; line-height: 24px; text-decoration: none; font-weight: 600; display: block; width: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif;">Lorem ipsum</a>
+                            <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; text-decoration: none; font-weight: 600; display: block; width: 100%; height: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif; line-height: 52px;">Lorem ipsum</a>
                           </td>
                         </tr>
                       </table>
@@ -288,16 +313,16 @@
                           <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                             <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                               <tr>
-                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px;">•</td>
-                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><p class="tahoma" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; padding-right: 10px;">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                                <td valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px;">•</td>
+                                <td valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><p class="tahoma" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; padding-right: 10px;">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
                               </tr>
                               <tr>
-                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px;">•</td>
-                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><p class="tahoma" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; padding-right: 10px;">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                                <td valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px;">•</td>
+                                <td valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><p class="tahoma" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; padding-right: 10px;">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
                               </tr>
                               <tr>
-                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px; line-height: 22px; padding-right: 10px;">•</td>
-                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><p class="tahoma" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; padding-right: 10px;">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                                <td valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px; line-height: 22px; padding-right: 10px;">•</td>
+                                <td valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><p class="tahoma" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; padding-right: 10px;">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
                               </tr>
                             </table>
                           </td>
@@ -320,7 +345,7 @@
                       <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr>
                           <td height="52" bgcolor="#ff69b4" class="btn btn-filled" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: #ff69b4; color: white;">
-                            <a href="https://preply.com/" target="_blank" class="btn-link tahoma font-regular" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; line-height: 24px; text-decoration: none; display: block; width: 100%; text-align: center; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-weight: 400;">Practice now</a>
+                            <a href="https://preply.com/" target="_blank" class="btn-link tahoma font-regular" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; text-decoration: none; display: block; width: 100%; height: 100%; text-align: center; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 52px;">Practice now</a>
                           </td>
                         </tr>
                       </table>
@@ -334,7 +359,7 @@
                       <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr>
                           <td height="52" class="btn btn-outlined" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: transparent;" bgcolor="transparent">
-                            <a href="https://preply.com/" target="_blank" class="btn-link tahoma font-regular" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; line-height: 24px; text-decoration: none; display: block; width: 100%; text-align: center; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-weight: 400;">Test my English</a>
+                            <a href="https://preply.com/" target="_blank" class="btn-link tahoma font-regular" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; text-decoration: none; display: block; width: 100%; height: 100%; text-align: center; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 52px;">Test my English</a>
                           </td>
                         </tr>
                       </table>
@@ -385,7 +410,7 @@
                             <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                               <tr>
                                 <td height="52" class="btn btn-outlined" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: transparent;" bgcolor="transparent">
-                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; line-height: 24px; text-decoration: none; font-weight: 600; display: block; width: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif; letter-spacing: 0.5px;">Button</a>
+                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; text-decoration: none; font-weight: 600; display: block; width: 100%; height: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif; line-height: 52px; letter-spacing: 0.5px;">Button</a>
                                 </td>
                               </tr>
                             </table>
@@ -425,10 +450,254 @@
                             <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                               <tr>
                                 <td height="52" class="btn btn-outlined" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: transparent;" bgcolor="transparent">
-                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; line-height: 24px; text-decoration: none; font-weight: 600; display: block; width: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif; letter-spacing: 0.5px;">Button</a>
+                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; text-decoration: none; font-weight: 600; display: block; width: 100%; height: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif; line-height: 52px; letter-spacing: 0.5px;">Button</a>
                                 </td>
                               </tr>
                             </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                  <tr>
+                    <td height="24" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Pig Section -->
+
+            <tr>
+              <td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 520px; padding: 24px; border-radius: 12px; background-color: #fff;" bgcolor="#fff">
+                  <tr>
+                    <td valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                        <tr>
+                          <td align="center" valign="middle" class="icon-container stack-column" width="48%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 20px;">
+                            <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/pig.png" width="138" height="138" alt="pig" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                          </td>
+
+                          <td class="stack-column" width="52%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                              <tr>
+                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 8px;">
+                                  <h2 class="tahoma font-regular" style="margin: 0; padding: 0; font-size: 24px; line-height: 28px; letter-spacing: -0.02px; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-weight: 400;">Maximize your subscription!</h2>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 28px;">
+                                  <p style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 16px; line-height: 22px; font-weight: 400; margin: 0; font-family: Helvetica, Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                              <tr>
+                                <td height="52" class="btn btn-outlined" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 52px; line-height: 52px; background-color: transparent;" bgcolor="transparent">
+                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #121117; font-size: 18px; text-decoration: none; font-weight: 600; display: block; width: 100%; height: 100%; text-align: center; font-family: 'Figtree', Helvetica, Arial, sans-serif; line-height: 52px; letter-spacing: 0.2px;">Lorem ipsum</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                  <tr>
+                    <td height="24" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Support Section -->
+
+            <tr>
+              <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-gray" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 520px; padding: 24px; border-radius: 12px; background-color: #ebebf1;" bgcolor="#ebebf1">
+                  <tr>
+                    <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 400px;">
+                              <tr>
+                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 8px;">
+                                  <h2 class="tahoma font-regular" style="margin: 0; padding: 0; font-size: 24px; line-height: 28px; letter-spacing: -0.02px; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-weight: 400;">We’re here to help</h2>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 20px;">
+                                  <p style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px;" class="tahoma">
+                                    Our friendly support team is always happy to answer your questions. Get in touch if you have any doubts or concerns.
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                              <tr>
+                                <td class="stack-column top-button" width="50%" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 6px;">
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                    <tr>
+                                      <td class="btn-big btn-outlined" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 68px; background-color: transparent;" height="68" bgcolor="transparent">
+                                        <a href="https://preply.com/" target="_blank" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit; display: inline-block;">
+                                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" class="btn-inline" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            <tr>
+                                              <td valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 6px;">
+                                                <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Icon-help.png" alt="icon-help" width="24" height="24" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                                              </td>
+                                              <td valign="middle" class="tahoma font-regular" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-weight: 400;">
+                                                <span style="font-size: 18px">Help center</span>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+
+                                <td class="stack-column top-button" width="50%" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 6px;">
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                    <tr>
+                                      <td class="btn-big btn-outlined" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 8px; border: 2px solid #121117; height: 68px; background-color: transparent;" height="68" bgcolor="transparent">
+                                        <a href="https://preply.com/" target="_blank" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit; display: inline-block; padding: 12px 20px;">
+                                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" class="btn-inline" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            <tr>
+                                              <td valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 6px;">
+                                                <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Icon-support.png" alt="icon-support" width="24" height="24" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                                              </td>
+                                              <td valign="middle" class="tahoma font-regular" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-weight: 400;">
+                                                <span style="font-size: 18px">Get support</span>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 20px; text-align: left;" align="left">
+                            <p class="text-small" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color: #302f3b;">By confirming, you’ll be subscribed to our suggested notifications. You can customize your setting or unsubscribe anytime.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                  <tr>
+                    <td height="24" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 24px; font-size: 24px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+
+            <tr>
+              <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 24px;">
+                  <tr>
+                    <td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 16px;">
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 6px;">
+                            <a href="https://preply.com/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit;">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Instagram_icon.png" width="24" height="24" alt="Instagram1" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                            </a>
+                          </td>
+                          <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 6px;">
+                            <a href="https://preply.com/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit;">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/LinkedIn_icon.png" width="24" height="24" alt="LinkedIn" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                            </a>
+                          </td>
+                          <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 6px;">
+                            <a href="https://preply.com/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit;">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Tiktok_icon.png" width="24" height="24" alt="TikTok" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                            </a>
+                          </td>
+                          <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 6px;">
+                            <a href="https://preply.com/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit;">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Youtube_icon.png" width="24" height="24" alt="YouTube" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                      <p style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color: #302f3b; text-align: center;" class="text-small tahoma">Subscribed email address iker.cia@preply.com</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 16px;">
+                      <a href="https://preply.com/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color: #302f3b; text-align: center; padding-bottom: 16px;" class="text-small tahoma">Unsubscribe</a>
+                      <span>|</span>
+                      <a href="https://preply.com/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color: #302f3b; text-align: center; padding-bottom: 16px;" class="text-small tahoma">Manage notifications</a>
+                      <span>|</span>
+                      <a href="https://preply.com/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color: #302f3b; text-align: center; padding-bottom: 16px;" class="text-small tahoma">Contact us</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                      <p style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-weight: 400; margin: 0; font-family: 'Tahoma', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; text-align: center; padding-bottom: 16px; color: #6a697c;" class="text-small tahoma">
+                        Copyright © 2025 Preply, Inc, 1309 Beacon Street, Suite 300, Brookline, MA 02446, USA. Please do not forward or share this email as it is intended to be used only by you. More
+                        details
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                      <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                        <tr>
+                          <td width="50%" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 5px;" align="right">
+                            <a href="https://apps.apple.com/us/app/preply-language-learning-app/id1352790442" target="_blank" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit; display: inline-block;">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/appstore.png" width="162px" height="54px" alt="appstore" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                            </a>
+                          </td>
+
+                          <td width="50%" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 5px;" align="left">
+                            <a href="https://play.google.com/store/apps/details?id=com.preply" target="_blank" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit; display: inline-block;">
+                              <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/google.png" width="162px" height="54px" alt="gplay" style="-ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block;">
+                            </a>
                           </td>
                         </tr>
                       </table>
