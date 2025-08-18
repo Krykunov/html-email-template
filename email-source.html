@@ -26,13 +26,17 @@
       }
 
       body {
-        background-color: #f4f4f8;
-        font-family: Helvetica, Arial, sans-serif;
         margin: 0;
       }
 
+      /* .body {
+        padding: 0;
+      } */
+
       .body {
+        margin: 0 auto;
         background-color: #f4f4f8;
+        font-family: Helvetica, Arial, sans-serif;
         padding-top: 40px;
       }
 
@@ -135,17 +139,11 @@
       .dot-divider {
         display: inline-block;
         vertical-align: middle;
-        text-decoration: line-through;
-      }
-
-      .dot-divider {
-        display: inline-block;
-        vertical-align: middle;
         width: 3px;
         height: 3px;
         background-color: #a8a8b6;
         border-radius: 50%;
-        margin: 0 7px;
+        margin: 0 6px;
       }
 
       /* Main styles */
@@ -153,6 +151,7 @@
         margin: 0 auto;
         width: 100%;
         max-width: 520px;
+        text-align: center;
       }
 
       .section {
@@ -247,6 +246,7 @@
       .avatar-container {
         display: inline-block;
         vertical-align: middle;
+        padding-right: 10px;
       }
 
       .avatar {
@@ -265,13 +265,11 @@
 
       .banner-container {
         border-radius: 12px;
-        height: 196px;
         width: 100%;
       }
 
       .banner {
         width: 100%;
-        height: 196px;
       }
 
       .subscription-header-container {
@@ -311,6 +309,19 @@
 
       /* Responsive styles */
       @media only screen and (max-width: 470px) {
+        .body {
+          padding: 0 8px;
+          text-align: center;
+        }
+        .email-container {
+          margin: 0 auto !important;
+          text-align: center !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .section {
+          margin: 0 auto !important;
+        }
         .stack-column {
           display: block !important;
           width: 100% !important;
@@ -342,23 +353,16 @@
           vertical-align: middle !important;
           text-align: center !important;
         }
-        /* td {
-          padding: 10px !important;
+
+        .pig-container {
+          padding: 30px 0 50px;
         }
-        h1 {
-          font-size: 20px !important;
-          line-height: 24px !important;
-        }
-        p {
-          font-size: 14px !important;
-          line-height: 20px !important;
-        } */
       }
     </style>
   </head>
 
   <body>
-    <table role="presentation" width="100%" bgcolor="#f4f4f8" cellpadding="0" cellspacing="0" border="0" class="body">
+    <table align="center" role="presentation" width="100%" bgcolor="#f4f4f8" cellpadding="0" cellspacing="0" border="0" class="body">
       <tr>
         <td align="center">
           <table class="email-container" width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -370,7 +374,7 @@
             <!-- Header Section -->
             <tr>
               <td align="center">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-header section-white">
+                <table bgcolor="#fff" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-header section-white">
                   <tr>
                     <td>
                       <!--[if gte mso 9]>
@@ -429,8 +433,8 @@
                                   </table>
                                   <p class="text-secondary tutor-bio">Native speaker, experienced, conversational</p>
                                   <p class="tutor-descr">
-                                    <span class="badge tahoma"> 0$/lesson </span>
-                                    <span class="dot-divider"></span>
+                                    <span bgcolor="#ffdf3d" class="badge tahoma"> 0$/lesson </span>
+                                    <span class="dot-divider" bgcolor="a8a8b6"></span>
                                     <span class="stroke"> 0€/lesson </span>
                                   </p>
                                   <p class="text-secondary">{day}, {month}, {time}, {date}</p>
@@ -496,7 +500,7 @@
 
             <tr>
               <td align="center">
-                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-bordered-bg">
+                <table bgcolor="#ffdbe9" width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-bordered-bg">
                   <tr>
                     <td style="padding: 9px"><img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/at.png" alt="icon" width="36" height="36" /></td>
                   </tr>
@@ -540,12 +544,12 @@
 
             <tr>
               <td align="center">
-                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
+                <table bgcolor="#fff" width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
                   <tr>
                     <td>
                       <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="bordered-block">
                         <tr>
-                          <td><span class="pink-badge tahoma">Idiom of the week</span></td>
+                          <td bgcolor="#ffdbe9" class="pink-badge"><span class="tahoma">Idiom of the week</span></td>
                         </tr>
 
                         <tr>
@@ -565,7 +569,7 @@
                                 xmlns:v="urn:schemas-microsoft-com:vml"
                                 xmlns:w="urn:schemas-microsoft-com:office:word"
                                 href="#"
-                                style="height: 196px; v-text-anchor: middle; width: 420px"
+                                style="v-text-anchor: middle; width: 420px"
                                 arcsize="2%"
                                 stroke="f"
                                 fill="t"
@@ -575,7 +579,7 @@
                             <![endif]-->
 
                             <!--[if !mso]><!-->
-                            <img class="banner" width="100%" height="196px" src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/app1.png" alt="App banner" />
+                            <img class="banner" width="100%" src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/app1.png" alt="App banner" />
                             <!--<![endif]-->
                           </td>
                         </tr>
@@ -677,7 +681,7 @@
 
             <tr>
               <td align="center">
-                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
+                <table bgcolor="#fff" width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
                   <tr>
                     <td style="padding-bottom: 32px">
                       <h2 class="tahoma">Here your title</h2>
@@ -688,7 +692,7 @@
                     <td style="padding-bottom: 24px">
                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
-                          <td valign="top" class="icon-container" style="padding-right: 20px">
+                          <td valign="top" style="padding-right: 20px">
                             <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Icon-sun.png" width="48" height="48" alt="icon-sun" />
                           </td>
                           <td>
@@ -728,7 +732,7 @@
                     <td>
                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
-                          <td valign="top" class="icon-container" style="padding-right: 20px">
+                          <td valign="top" style="padding-right: 20px">
                             <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Icon-bell.png" width="48" height="48" alt="icon-sun" />
                           </td>
                           <td>
@@ -771,24 +775,24 @@
 
             <tr>
               <td align="center">
-                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
+                <table bgcolor="#fff" width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
                   <tr>
                     <td valign="middle">
                       <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                         <tr>
-                          <td align="center" valign="middle" class="icon-container stack-column" width="48%" style="padding-right: 20px">
+                          <td align="center" valign="middle" class="pig-container stack-column" width="48%" style="padding-right: 20px">
                             <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/pig.png" width="138" height="138" alt="pig" />
                           </td>
 
                           <td class="stack-column" width="52%">
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <table align="left" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
                                 <td style="padding-bottom: 8px">
-                                  <h2 class="tahoma font-regular">Maximize your subscription!</h2>
+                                  <h2 class="tahoma font-regular" style="text-align: left">Maximize your subscription!</h2>
                                 </td>
                               </tr>
                               <tr>
-                                <td style="padding-bottom: 28px">
+                                <td style="padding-bottom: 28px; text-align: left">
                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </td>
                               </tr>
@@ -824,13 +828,13 @@
 
             <tr>
               <td>
-                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-gray">
+                <table align="left" bgcolor="#ebebf1" width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-gray">
                   <tr>
                     <td>
                       <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                         <tr>
                           <td>
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width: 400px">
+                            <table align="left" role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width: 400px; text-align: left">
                               <tr>
                                 <td style="padding-bottom: 8px">
                                   <h2 class="tahoma font-regular">We’re here to help</h2>
@@ -927,25 +931,25 @@
                 <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 24px">
                   <tr>
                     <td align="center" style="padding-bottom: 16px">
-                      <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
+                      <table border="0" cellpadding="0" cellspacing="0" align="center">
                         <tr>
                           <td style="padding: 0 6px">
-                            <a href="https://preply.com/">
+                            <a href="https://www.instagram.com/preply/" title="Visit Preply on Instagram">
                               <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Instagram_icon.png" width="24" height="24" alt="Instagram1" />
                             </a>
                           </td>
                           <td style="padding: 0 6px">
-                            <a href="https://preply.com/">
+                            <a href="https://www.linkedin.com/company/preply/" title="Visit Preply on LinkedIn">
                               <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/LinkedIn_icon.png" width="24" height="24" alt="LinkedIn" />
                             </a>
                           </td>
                           <td style="padding: 0 6px">
-                            <a href="https://preply.com/">
+                            <a href="https://www.tiktok.com/@preplyglobal?lang=uk-UA" title="Visit Preply on TikTok">
                               <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Tiktok_icon.png" width="24" height="24" alt="TikTok" />
                             </a>
                           </td>
                           <td style="padding: 0 6px">
-                            <a href="https://preply.com/">
+                            <a href="https://www.youtube.com/channel/UCyDXMl-ru1F--NPCtO7aDig" title="Visit Preply on YouTube">
                               <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Youtube_icon.png" width="24" height="24" alt="YouTube" />
                             </a>
                           </td>
