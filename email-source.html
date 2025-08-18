@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Preply - Learning, upgraded</title>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap');
+
       /* Reset styles */
       body,
       table,
@@ -67,9 +69,12 @@
       h2 {
         font-size: 24px;
         line-height: 28px;
+        letter-spacing: -0.02px;
       }
 
       h3 {
+        font-size: 18px;
+        line-height: 24px;
       }
 
       p {
@@ -102,6 +107,16 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: bold;
+      }
+
+      .pink-badge {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 2px 8px;
+        background-color: #ffdbe9;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 18px;
       }
 
       .stroke {
@@ -152,6 +167,12 @@
       .section-bordered-bg {
         border: 2px solid #000;
         background-color: #ffdbe9;
+      }
+
+      .bordered-block {
+        padding: 24px;
+        border: 2px solid #000;
+        border-radius: 12px;
       }
 
       .hero {
@@ -217,6 +238,46 @@
 
       .tutor-descr {
         padding-bottom: 4px;
+      }
+
+      .banner-container {
+        border-radius: 12px;
+        height: 196px;
+        width: 100%;
+      }
+
+      .banner {
+        width: 100%;
+        height: 196px;
+      }
+
+      .subscription-header-container {
+        padding-top: 16px;
+        padding-bottom: 8px;
+      }
+
+      .subscription-header {
+        font-weight: 600;
+        letter-spacing: -1px;
+      }
+
+      .idiom-header {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      /**/
+
+      .figtree {
+        font-family: 'Figtree', Helvetica, Arial, sans-serif;
+      }
+
+      .tahoma {
+        font-family: 'Tahoma', Helvetica, Arial, sans-serif;
+      }
+
+      .font-regular {
+        font-weight: 400;
       }
 
       /* Responsive styles */
@@ -311,7 +372,7 @@
                                   </table>
                                   <p class="text-secondary tutor-bio">Native speaker, experienced, conversational</p>
                                   <p class="tutor-descr">
-                                    <span class="badge"> 0$/ lesson </span>
+                                    <span class="badge tahoma"> 0$/lesson </span>
                                     <span class="dot-divider"></span>
                                     <span class="stroke"> 0€/lesson </span>
                                   </p>
@@ -321,12 +382,23 @@
                             </table>
                           </td>
                         </tr>
+
+                        <tr>
+                          <td>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                              <tr>
+                                <td height="20" style="line-height: 20px; font-size: 20px">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
                         <tr>
                           <td>
                             <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
                               <tr>
                                 <td height="52" bgcolor="#ff69b4" class="btn btn-filled">
-                                  <a href="https://preply.com/" target="_blank" class="btn-link">Lorem ipsum</a>
+                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree">Lorem ipsum</a>
                                 </td>
                               </tr>
                             </table>
@@ -353,11 +425,15 @@
               </td>
             </tr>
 
-            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
-              <tr>
-                <td height="24" style="line-height: 24px; font-size: 24px">&nbsp;</td>
-              </tr>
-            </table>
+            <tr>
+              <td>
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+                    <td height="24" style="line-height: 24px; font-size: 24px">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
             <!-- Subscription Section -->
 
@@ -370,7 +446,7 @@
                   <td>
                     <table width="400px" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 400px">
                       <tr>
-                        <td style="padding-top: 16px; padding-bottom: 8px"><h2>Maximize your subscription!</h2></td>
+                        <td class="subscription-header-container"><h2 class="subscription-header tahoma">Maximize your subscription!</h2></td>
                       </tr>
                       <tr>
                         <td style="padding-bottom: 28px"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></td>
@@ -383,7 +459,238 @@
                       <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
                         <tr>
                           <td height="52" class="btn btn-outlined">
-                            <a href="https://preply.com/" target="_blank" class="btn-link">Lorem ipsum</a>
+                            <a href="https://preply.com/" target="_blank" class="btn-link figtree">Lorem ipsum</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+                    <td height="24" style="line-height: 24px; font-size: 24px">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Idiom Section -->
+
+            <tr>
+              <td align="center">
+                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
+                  <tr>
+                    <td>
+                      <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="bordered-block">
+                        <tr>
+                          <td><span class="pink-badge tahoma">Idiom of the week</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                              <tr>
+                                <td height="20" style="line-height: 20px; font-size: 20px">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="banner-container">
+                            <!--[if gte mso 9]>
+                              <v:roundrect
+                                xmlns:v="urn:schemas-microsoft-com:vml"
+                                xmlns:w="urn:schemas-microsoft-com:office:word"
+                                href="#"
+                                style="height: 196px; v-text-anchor: middle; width: 420px"
+                                arcsize="2%"
+                                stroke="f"
+                                fill="t"
+                              >
+                                <v:fill src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/app1.png" type="frame" />
+                              </v:roundrect>
+                            <![endif]-->
+
+                            <!--[if !mso]><!-->
+                            <img class="banner" width="100%" height="196px" src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/app1.png" alt="App banner" />
+                            <!--<![endif]-->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                              <tr>
+                                <td height="20" style="line-height: 20px; font-size: 20px">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 8px"><h2 class="idiom-header tahoma">Estar en racha</h2></td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 20px"><p class="tahoma">To be on a winning streak.</p></td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 8px"><p class="tahoma" style="font-weight: bold">Direct translation:</p></td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 20px"><p>"To be on a streak."</p></td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 14px"><p class="tahoma" style="font-weight: bold">Examples:</p></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                              <tr>
+                                <td style="padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
+                                <td><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 14px; font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
+                                <td><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                              </tr>
+                              <tr>
+                                <td style="font-size: 16px; line-height: 22px; padding-right: 10px">•</td>
+                                <td><p class="tahoma" style="font-size: 16px; line-height: 22px; padding-right: 10px">"I’ve been promoted twice this year. I’m on a roll!"</p></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                          <td height="20" style="line-height: 20px; font-size: 20px">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
+                        <tr>
+                          <td height="52" bgcolor="#ff69b4" class="btn btn-filled">
+                            <a href="https://preply.com/" target="_blank" class="btn-link tahoma font-regular">Practice now</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                          <td height="12" style="line-height: 12px; font-size: 12px">&nbsp;</td>
+                        </tr>
+                      </table>
+
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
+                        <tr>
+                          <td height="52" class="btn btn-outlined">
+                            <a href="https://preply.com/" target="_blank" class="btn-link tahoma font-regular">Test my English</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+                    <td height="24" style="line-height: 24px; font-size: 24px">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Chat Section -->
+
+            <tr>
+              <td align="center">
+                <table width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" class="section section-white">
+                  <tr>
+                    <td style="padding-bottom: 32px">
+                      <h2 class="tahoma">Here your title</h2>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="padding-bottom: 24px">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td valign="top" class="icon-container" style="padding-right: 20px">
+                            <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Icon-sun.png" width="48" height="48" alt="icon-sun" />
+                          </td>
+                          <td>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td style="padding-bottom: 4px"><h3 class="tahoma">Have a friendly chat</h3></td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 20px"><p class="tahoma">Learn about your student, get them talking, and make them feel at ease</p></td>
+                              </tr>
+                            </table>
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
+                              <tr>
+                                <td height="52" class="btn btn-outlined">
+                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="letter-spacing: 0.5px">Button</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="padding-bottom: 24px">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+                          <td style="border-top: 1px solid #dedede; line-height: 0; font-size: 0">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td valign="top" class="icon-container" style="padding-right: 20px">
+                            <img src="https://zhc7busjda8tgscf.public.blob.vercel-storage.com/Icon-bell.png" width="48" height="48" alt="icon-sun" />
+                          </td>
+                          <td>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td style="padding-bottom: 4px"><h3 class="tahoma">Have a friendly chat</h3></td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 20px"><p class="tahoma">Learn about your student, get them talking, and make them feel at ease</p></td>
+                              </tr>
+                            </table>
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
+                              <tr>
+                                <td height="52" class="btn btn-outlined">
+                                  <a href="https://preply.com/" target="_blank" class="btn-link figtree" style="letter-spacing: 0.5px">Button</a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
